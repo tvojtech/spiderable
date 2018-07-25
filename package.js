@@ -1,5 +1,5 @@
 Package.describe({
-  name: "ongoworks:spiderable",
+  name: "tvojtech:spiderable",
   summary: "Docker + Port friendly Spiderable package",
   version: "1.0.7",
   git: "https://github.com/ongoworks/spiderable"
