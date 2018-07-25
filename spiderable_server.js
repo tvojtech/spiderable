@@ -47,7 +47,7 @@ Spiderable._urlForPhantom = function (siteAbsoluteUrl, requestUrl) {
 
 var PHANTOM_SCRIPT = Assets.getText("phantom_script.js");
 
-WebApp.connectHandlers.use(function (req, res, next) {
+(__meteor_bootstrap__.app || WebApp.connectHandlers).use(function (req, res, next) {
   // _escaped_fragment_ comes from Google's AJAX crawling spec:
   // https://developers.google.com/webmasters/ajax-crawling/docs/specification
   // This spec was designed during the brief era where using "#!" URLs was
